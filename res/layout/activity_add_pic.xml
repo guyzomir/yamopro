@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AddPicActivity" >
+
+    <ImageView
+        android:id="@+id/logotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:contentDescription="@string/logodescribe"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logotext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:contentDescription="@string/logodescribe"
+        android:src="@drawable/textpic" />
+
+    <TextView
+        android:id="@+id/choicetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addphoto1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="@string/or"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageButton
+        android:id="@+id/addphoto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilepic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="#ffffff"
+        android:contentDescription="@string/logodescribe"
+        android:onClick="ajoutClick"
+        android:src="@drawable/uploadbutton" />
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choicetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:clickable="true"
+        android:onClick="next"
+        android:text="@string/skipbutton"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#32CD32" />
+
+</RelativeLayout>

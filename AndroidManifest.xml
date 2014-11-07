@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="camerboy.yamo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name="camerboy.yamo.YamoFirstActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="camerboy.yamo.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.EditProfileActivity"
+            android:label="@string/title_activity_edit_profile" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.AddPicActivity"
+            android:label="@string/title_activity_add_pic" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.TakePictureActivity"
+            android:label="@string/title_activity_take_picture" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.ChoicesActivity"
+            android:label="@string/title_activity_choices" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.ProfilePage"
+            android:label="@string/title_activity_profile_page" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.Shortcut"
+            android:label="@string/title_activity_shortcut" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.Events_list"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.HomePage"
+            android:label="@string/title_activity_profile_page" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.NewEventActivity"
+            android:label="@string/title_activity_new_event" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.SoccerActivity"
+            android:label="@string/title_activity_soccer" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.DescriptionActivity"
+            android:label="@string/title_activity_description" >
+        </activity>
+        <activity
+            android:name="camerboy.yamo.Confirmation"
+            android:label="@string/title_activity_confirmation" >
+        </activity>
+    </application>
+
+</manifest>
